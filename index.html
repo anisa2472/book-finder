@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Finder</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- FAVICON -->
+
+</head>
+
+<body>
+    <!-- SEARCH BOOK -->
+    <div class="container" id="search">
+        <div class="row" style="margin-top: 10%">
+            <img style="width: 80%;" src="assets/img/logo.png">
+            <div class="input-group" id="search-bar">
+                <input type="text" class="col form-control" id="search-text" placeholder="Title, Author, or ISBN">
+                <span class="input-group-btn">
+                    <button class="col btn btn-primary" id="search-button" onclick="">SEARCH</button>
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <!-- BOOKLIST -->
+    <div class="container" id="booklist">
+        <div class="row">
+            <div class="col-xs-12 col-md-12" id="title">
+                <h2>BESTSELLING BOOKS</h2>
+                <h3>New York Times</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-md-12">
+                <div class="item_container">
+                    <div id="books"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer" id="foot">
+    </div>
+    <!-- JAVASCRIPT -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.10.0.min.js"></script>
+    <script type="text/javascript" src="https://www.google.com/books/jsapi.js"></script>
+    <script type="text/javascript" src="assets/js/bestseller.js"></script>
+    <script type="text/javascript" src="assets/js/book.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+</body>
+
+</html>
